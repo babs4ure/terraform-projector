@@ -100,3 +100,33 @@ variable "operator_email" {
   type          = string
   
 }
+
+#autoscaling group variable
+variable "launch_template_name" {
+  default       = "dev-launch-template"
+  description   = "the dev launch temp"
+  type          = string
+  
+}
+
+
+variable "ec2_image_id" {
+  default       = "ami-08a5a143e2c5ee1a8"
+  description   = "id of ami"
+  type          = string
+  
+}
+
+variable "ec2_instance_type" {
+  default       = "t2.micro"
+  description   = "ec2 instance type"
+  type          = string
+  
+}
+
+variable "ec2_keypair_name" {
+  default       = "LinuxEc2"
+  description   = "the name of my keypair"
+  type          = string
+  
+}
