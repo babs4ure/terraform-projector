@@ -130,3 +130,18 @@ variable "ec2_keypair_name" {
   type          = string
   
 }
+
+#route 53 variables
+variable "domain_name" {
+  default       = "babs2kloud.link"
+  description   = "the recent domain name"
+  type          = string
+  
+}
+
+variable "record_name" {
+  default       = "www"
+  description   = "sub domain name"
+  type          = string
+  
+}
