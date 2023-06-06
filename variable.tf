@@ -55,3 +55,32 @@ variable "ssh_location" {
   type          = string
   
 }
+
+#rds variables
+variable "database_snapshot_identifiers" {
+  default       = "arn:aws:rds:us-east-1:670313630723:snapshot:database-1-snapshot"
+  description   = "the database snapshot arn"
+  type          = string
+  
+}
+
+variable "database_instance_class" {
+  default       = "db.t2.micro"
+  description   = "the database instance type"
+  type          = string
+  
+}
+
+variable "database_instance_identifier" {
+  default       = "dev-rds-db"
+  description   = "the database instance identifier"
+  type          = string
+  
+}
+
+variable "multi-az-deployment" {
+  default       = "false"
+  description   = "create a standby az instance"
+  type          = bool
+  
+}
